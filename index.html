@@ -21,9 +21,6 @@
             .vertical-center{
                 margin: auto 0;
             }
-            .text-align-lg{
-                text-align: center;
-            }
             .tb-centered{
                 margin-right: auto;
                 margin-left: auto;
@@ -35,9 +32,33 @@
             .nav-push-right{
                 margin-left: calc(100% - 54px);
             }
+            .header-sm{
+                max-width: 245px;
+                width: calc(100% - 114px);
+            }
+            /* .header-lg{
+                width: calc(100% - 245px);
+            } */
+            .bg-grey{
+                background-color: #eee !important;
+            }
+            .fs-14px{
+                font-size: 14px;
+            }
+            @media (min-width: 789px){
+                .header-sm{
+                    max-width: 350px;
+                }
+                .header-lg{
+                    width: calc(100% - 350px);
+                }
+            }
             @media (min-width: 992px){
-                .text-align-lg {
-                    text-align: left;
+                .header-sm{
+                    max-width: 440px;
+                }
+                .header-lg{
+                    width: calc(100% - 440px);
                 }
             }
         </style>
@@ -47,12 +68,27 @@
             <div class="w-100">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 vertical-center">
+                        <div class="align-middle col-auto header-lg">
                             <img src="images/honda_logo.png" alt="logo">
-                            <a class="navbar-brand" href="#"><span class="fs-3" style="font-weight: 600;">Your Honda Dealer</span></a>
+                            <a class="navbar-brand align-middle d-none d-md-inline" href="#"><span class="fs-3" style="font-weight: 600;">Your Honda Dealer</span></a>
                         </div>
-                        <div class="col-md-6 vertical-center">
-                            <span class="vertical-center fw-bold">Sales: 000-000-0000</span>
+                        <div class="col-auto vertical-center header-sm">
+                            <div class="row">
+                                <div class="col-lg-auto text-md-end d-block d-md-none">
+                                    <a class="navbar-brand align-middle" href="#"><span class="fs-3" style="font-weight: 600;">Your Honda Dealer</span></a>
+                                </div>
+                                <div class="col-lg-auto text-md-end">
+                                    <span class="vertical-center fw-bold">Sales: 000-000-0000</span>
+                                </div>
+                                <div class="col-lg-auto float-md-end float-lg-start float-sm-start">
+                                    <div class="float-md-end float-lg-start float-sm-start">
+                                        <a href="#"><img class="align-middle" src="images/fb_icon.png" alt="Facebook" style="height: 25px;"></a>
+                                        <a href="#"><img class="align-middle" src="images/twitter_icon.png" alt="Twitter" style="height: 25px;"></a>
+                                        <a href="#" ><img class="align-middle" src="images/gp_icon.png" alt="Google Plus" style="height: 25px;"></a>
+                                        <a href="#"><img class="align-middle" src="images/live_chat_button.png" alt="Live Chat" style="height: 25px;"></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,7 +138,7 @@
         <div class="div-banner">
             <div class="banner-text w-100">
                 <div class="container">
-                    <div class="text-align-lg">
+                    <div class="text-lg-start text-center">
                         <h1 class="mb-0">Welcome Home.</h1>
                         <span>
                             Let our family help you find the perfect vehicle for your family.
@@ -114,9 +150,10 @@
                 </div>
             </div>
             <img class="d-lg-block d-none w-100" src="images/large_banner.png" alt="Banner">
-            <img class="d-lg-none d-block w-100" src="images/tb_banner.png" alt="Banner">
+            <img class="d-lg-none d-md-block d-none w-100" src="images/tb_banner.png" alt="Banner">
+            <img class="d-md-none d-block w-100" src="images/mb_banner.png" alt="Banner">
         </div>
-        <div class="bg-light">
+        <div class="bg-grey">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-lg-3">
@@ -137,24 +174,24 @@
                         <div class="col-12 bg-white pt-2 pb-5">
                             <div class="row">
                                 <div class="col-lg-3">
-                                    <div class="p-3 text-align-lg">
+                                    <div class="p-3 text-lg-start text-center">
                                         <span class="fs-4 fw-bold">Let Us Help You</span>
                                         <ul class="list-unstyled">
-                                            <li><a href="#" class="text-secondary text-decoration-none">Quick Quote</a></li>
-                                            <li><a href="#" class="text-secondary text-decoration-none">Schedule Service</a></li>
-                                            <li><a href="#" class="text-secondary text-decoration-none">Get Pre-Approved</a></li>
-                                            <li><a href="#" class="text-secondary text-decoration-none">Honda E-Store</a></li>
-                                            <li><a href="#" class="text-secondary text-decoration-none">Collision Center</a></li>
-                                            <li><a href="#" class="text-secondary text-decoration-none">Employment Center</a></li>
+                                            <li class="py-2"><a href="#" class="text-secondary text-decoration-none">Quick Quote</a></li>
+                                            <li class="py-2"><a href="#" class="text-secondary text-decoration-none">Schedule Service</a></li>
+                                            <li class="py-2"><a href="#" class="text-secondary text-decoration-none">Get Pre-Approved</a></li>
+                                            <li class="py-2"><a href="#" class="text-secondary text-decoration-none">Honda E-Store</a></li>
+                                            <li class="py-2"><a href="#" class="text-secondary text-decoration-none">Collision Center</a></li>
+                                            <li class="py-2"><a href="#" class="text-secondary text-decoration-none">Employment Center</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-9">
-                                    <div class="p-3  text-align-lg">
+                                    <div class="p-3  text-lg-start text-center">
                                         <span class="fs-4 fw-bold">Current Offers</span>
-                                        <a href="#" class="text-secondary text-decoration-none">View all offers</a>
+                                        <a href="#" class="text-secondary text-decoration-none d-block d-lg-inline">View all offers</a>
                                     </div>
-                                    <div class="row text-align-lg">
+                                    <div class="row text-lg-start text-center">
                                         <div class="col-lg-4">
                                             <table class="tb-centered">
                                                 <tbody>
@@ -241,14 +278,53 @@
                 </div>
             </div>
         </div>
-        <div class="bg-dark">
+        <div class="bg-dark py-4">
             <div class="container">
-                <div class="row py-4">
+                <div class="row">
                     <div class="col-lg-6 py-3">
                         <img class="w-100" src="images/the_new_2015_fit.png" alt="2015 Honda Odyssey LX">
                     </div>
                     <div class="col-lg-6 py-3">
                         <img class="w-100" src="images/lease_return.png" alt="$500 off Coupon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-footer bg-white py-4 fs-14px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 fs-11px align-middle text-lg-start text-center vertical-center">
+                        <span class="text-secondary">&copy;2015. Your Hobda Dealer | <a href="#" class="text-secondary text-decoration-none">Privacy</a> | <a href="#" class="text-secondary text-decoration-none">Contact Us</a></span>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="float-md-end mx-auto d-block" src="images/pm_logo.png" alt="PixelMotion">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-footer bg-primary py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 align-middle fs-14px text-white">
+                        <a href="#" class="text-white text-decoration-none">Accord Coupe</a> | 
+                        <a href="#" class="text-white text-decoration-none">Accord Sedan</a> | 
+                        <a href="#" class="text-white text-decoration-none">Civic Coupe</a> | 
+                        <a href="#" class="text-white text-decoration-none">Civic GX</a> | 
+                        <a href="#" class="text-white text-decoration-none">Civic Hybrid</a> | 
+                        <a href="#" class="text-white text-decoration-none">Civic Sedan</a> | 
+                        <a href="#" class="text-white text-decoration-none">Civic Sl Sedan</a> | 
+                        <a href="#" class="text-white text-decoration-none">Crosstour</a> | 
+                        <a href="#" class="text-white text-decoration-none">CR-V</a> | 
+                        <a href="#" class="text-white text-decoration-none">CR-Z</a> | 
+                        <a href="#" class="text-white text-decoration-none">Element</a> | 
+                        <a href="#" class="text-white text-decoration-none">FCX Clarity</a> | 
+                        <a href="#" class="text-white text-decoration-none">Fit</a> | 
+                        <a href="#" class="text-white text-decoration-none">Fit EV</a> | 
+                        <a href="#" class="text-white text-decoration-none">Insight</a> | 
+                        <a href="#" class="text-white text-decoration-none">Odyssey</a> | 
+                        <a href="#" class="text-white text-decoration-none">Pilot</a> | 
+                        <a href="#" class="text-white text-decoration-none">Ridgeline</a> | 
+                        <a href="#" class="text-white text-decoration-none">S2000</a>
                     </div>
                 </div>
             </div>
