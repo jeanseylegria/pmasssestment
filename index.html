@@ -24,6 +24,17 @@
             .text-align-lg{
                 text-align: center;
             }
+            .tb-centered{
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .marg-rm-8{
+                margin-left: -8px;
+                margin-right: -8px;
+            }
+            .nav-push-right{
+                margin-left: calc(100% - 54px);
+            }
             @media (min-width: 992px){
                 .text-align-lg {
                     text-align: left;
@@ -46,12 +57,12 @@
                     </div>
                 </div>
                 <div class="w-100 navbar-dark bg-dark">
-                    <button class="navbar-toggler float-right border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler border-0 nav-push-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="container">
-                            <ul class="navbar-nav mr-auto">
+                            <ul class="navbar-nav mr-auto marg-rm-8">
                                 <li class="nav-item active">
                                     <a class="nav-link text-white" href="#">HOME</a>
                                 </li>
@@ -102,7 +113,8 @@
                     </div>
                 </div>
             </div>
-            <img src="images/large_banner.png" alt="Banner" style="width:100%;">
+            <img class="d-lg-block d-none w-100" src="images/large_banner.png" alt="Banner">
+            <img class="d-lg-none d-block w-100" src="images/tb_banner.png" alt="Banner">
         </div>
         <div class="bg-light">
             <div class="container py-5">
@@ -122,7 +134,7 @@
                 </div>
                 <div class="row pt-5">
                     <div class="col-12">
-                        <div class="col-12 bg-white">
+                        <div class="col-12 bg-white pt-2 pb-5">
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="p-3 text-align-lg">
@@ -142,20 +154,101 @@
                                         <span class="fs-4 fw-bold">Current Offers</span>
                                         <a href="#" class="text-secondary text-decoration-none">View all offers</a>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-3">
-
+                                    <div class="row text-align-lg">
+                                        <div class="col-lg-4">
+                                            <table class="tb-centered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img class="w-100" src="images/accord_sedan.png" alt="2015 Honda Accord Sedan CVTLX">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fs-6 fw-bold">2015 Honda Accord Sedan CVTLX</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>Lease for $199/mo. for 36 months</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#" class="text-secondary text-decoration-none">See details</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        <div class="col-lg-3">
-
+                                        <div class="col-lg-4">
+                                            <table class="tb-centered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img class="w-100" src="images/crv_cvt.png" alt="2015 Honda CR-V CVT 2WD LX">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fs-6 fw-bold">2015 Honda CR-V CVT 2WD LX</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>Lease for $239/mo. for 39 months</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#" class="text-secondary text-decoration-none">See details</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        <div class="col-lg-3">
-
+                                        <div class="col-lg-4">
+                                            <table class="tb-centered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <img class="w-100" src="images/odyssey_lx.png" alt="2015 Honda Odyssey LX">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fs-6 fw-bold">2015 Honda Odyssey LX</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span>Lease for $269/mo. for 36 months</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="#" class="text-secondary text-decoration-none">See details</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark">
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-lg-6 py-3">
+                        <img class="w-100" src="images/the_new_2015_fit.png" alt="2015 Honda Odyssey LX">
+                    </div>
+                    <div class="col-lg-6 py-3">
+                        <img class="w-100" src="images/lease_return.png" alt="$500 off Coupon">
                     </div>
                 </div>
             </div>
